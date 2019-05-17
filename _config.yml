@@ -1,7 +1,7 @@
 title: Ramblings
 author: Abhishek Kumar
 email: abhishekkumar8222@gmail.com
-description: Test description
+description: A personal website by me, Abhishek. I ramble about my life and the lessons learnt. Hang tight for the ride!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://abhishekkumar2718.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  abhishekkumar2718
@@ -11,6 +11,8 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+posts_offset: 0
 
 sass:
   sass_dir: assets/css

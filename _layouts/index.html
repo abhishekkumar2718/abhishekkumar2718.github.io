@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="home">
+      {%- if page.title -%}
+        <h1 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+      <!--
+        Split the index page into two columns
+        Left column: A basic about me
+        Right column: Some of my recent posts
+      -->
+      <div class="container">
+        <div class="row">
+          <div id="about-me"class="col-sm">
+            <br>
+            {{ content }}
+          </div>
+
+          <div id="posts" class="col-sm">
+            <br>
+            <h4><p class="text-primary">Recent Posts</p></h4>
+            <ul class="posts">
+              {%- for post in site.posts offset: site.posts_offset limit:3 -%}
+              <li>
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h5>
+                  <a href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                </h5>
+                <p>{{ post.excerpt }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+
+            <ul>
+              <p class="text-primary">Upcoming Articles</p>
+              {% for article in page.upcoming_articles %}
+              <li>{{ article }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+    </div>
+    {% include footer.html %}
+  </body>
+  <style>
+  ul.posts {
+    list-style: none;
+  }
+  </style>
+</html>
