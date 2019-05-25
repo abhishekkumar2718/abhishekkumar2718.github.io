@@ -1,0 +1,10 @@
+<center>
+  <figure>
+    {% if page.layout == 'post' %}
+      <img src="/assets/img/posts/{{ page.asset_img }}/{{ include.filename }}" alt="{{ include.alt }}"/>
+    {% else %}
+      <img src="/assets/img/{{ page.asset_img }}/{{ include.filename}}" alt="{{ include.alt }}"/>
+    {% endif %}
+    <figcaption>{{ include.caption }}</figcaption>
+  </figure>
+</center>

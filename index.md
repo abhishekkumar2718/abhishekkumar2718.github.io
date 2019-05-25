@@ -1,10 +1,5 @@
 ---
 layout: index
-
-upcoming_articles:
-  - The problem with extra curricular events in NITK
-  - Masculinity, Jordan Peterson and review of "12 Rules of Living"
-  - A guide to personal social media branding
 ---
 <h4><p class="text-primary">About Me</p></h4>
 Hello! I see you have found the way to my personal website.
