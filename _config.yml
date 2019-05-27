@@ -21,6 +21,8 @@ social_links:
   github: abhishekkumar2718
   instagram: abhishek_kumar2718
 
+date_format: '%b %-d, %Y'
+
 exclude:
   - Gemfile
   - Gemfile.lock

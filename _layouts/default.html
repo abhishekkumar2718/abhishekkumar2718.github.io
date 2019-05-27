@@ -5,6 +5,13 @@
     {% include header.html %}
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        <header class="post-header">
+          <center>
+            <h1 class="post-title">
+              <p class="text-primary">{{ page.title | escape }}</p>
+            </h1>
+          </center>
+        </header>
         {{ content }}
       </div>
     </main>

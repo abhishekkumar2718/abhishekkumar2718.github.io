@@ -1,9 +1,7 @@
 ---
 layout: post
-section-type: post
 title: Why I Write
-category: personal
-tags: ['personal']
+category: Personal
 excerpt: Take a view into my childhood to learn a little about my world views and motivation for writing this blog.
 ---
 

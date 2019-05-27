@@ -1,8 +1,4 @@
 Things to be before re-publishing the site:
-  - Finish the article on plot:
-    - Add images
-    - Edit it
-  - Add a index page for blog
   - Add a new layout for categories and series
-
-[Categories refers to a sequence of posts vaguely related to a topic where series form a chronological, tightly bound posts]
+  - Add search
+  - Fix navbar for mobile devices
