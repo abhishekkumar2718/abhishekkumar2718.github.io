@@ -1,0 +1,41 @@
+---
+layout: default
+title: Recent Posts
+---
+
+<ul class="posts">
+ {%- for post in site.posts offset: site.posts_offset limit:3 -%}
+ <li>
+   {% include post-list.html %}
+ </li>
+ {% endfor %}
+</ul>
+
+<ul>
+  <p class="text-primary">Upcoming Articles</p>
+  {% for article in site.data.upcoming_articles %}
+    <li>{{ article }}</li>
+  {% endfor %}
+</ul>
+
+<hr><br>
+
+<center>
+  <h4><p class="text-primary">About Me</p></h4>
+</center>
+
+<p>Hello! I see you have found the way to my personal website.</p>
+
+<p>Welcome to <strong>Ramblings</strong>, where I write about anything that interests me.</p>
+
+<p>I am <span class="text-primary">Abhishek Kumar</span>. Read more about me at <a href="/about">here</a>.
+
+<p>I have planned quite a few articles. Visit the site regularly.</p>
+
+<p class="text-muted">Pssh... If you are a recruiter looking to hire me, take a look at <a href="{{ site.projects_index }}">my projects</a> or my <a href="https://github.com/{{ site.social_links.github }}">github profile.</a></p>
+
+<style>
+  ul.posts {
+    list-style: none;
+    }
+</style>
