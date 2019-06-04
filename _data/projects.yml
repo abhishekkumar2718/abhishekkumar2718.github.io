@@ -1,0 +1,55 @@
+- DebianCI:
+  name: DebianCI
+  status: In Progress
+  link: https://salsa.debian.org/ci-team/debci/
+  technologies:
+    - Ruby
+    - Systems
+    - CI-CD
+  description: |
+    DebianCI is an automated system that coordinates the execution of automated 
+    tests against packages in the Debian system.<br/><br/> 
+    I have been contributing since March 2019, as a part of GSoC although I couldn't be selected. 
+    Debci was my first experience with a _professional_ standard codebase.
+    I have learned a lot about coding conventions and standards.
+    Contributing to Debci helped me improve my ruby skills.
+
+- IRIS:
+  name: IRIS
+  status: In Progress
+  link: https://iris.nitk.ac.in/
+  technologies:
+    - Ruby On Rails
+    - Web Development
+  description: |
+    IRIS is a home-grown ERP solution for administrative, academic, and alumni-related needs of NITK. 
+    It was founded by a group of students envisioning to bring a change at NITK under the guidance of Dr. KV Gandadharan.<br/><br/>
+    I have been working as a backend developer since January 2019, after a winter internship in December 2018.
+    I have worked primarily on Admissions, Ph.D. and Certificates modules.
+    I am proud of my work at IRIS, and it's gratifying to see my contributions make life easier for people at NITK.
+
+- Dotfiles:
+  name: Dotfiles
+  status: Finished
+  link: https://github.com/abhishekkumar2718/dotfiles
+  technologies:
+    - Shell Scripting
+    - Linux
+  description: |
+    Dotfiles are plain text configuration files. The name derives from the leading `.` in their names, making them hidden.<br/><br/>
+    I have spent a lot of time configuring and adjusting my desktop. 
+    Setting up a new VM or even desktops is difficult and error-prone. 
+    In true Linux tradition, I made a few helper scripts to automate the proccess.
+
+- NoteTaker:
+  name: NoteTaker
+  status: In Progress
+  link: https://github.com/abhishekkumar2718/NoteTaker
+  technologies:
+    - Ruby
+    - Markdown
+  description: |
+    NoteTaker is a barebones notes-taking app which renders a nested markdown directory to HTML. 
+
+    I had the idea for this project as I couldn't find any markdown-based note taking solution which works well with Vim.
+    I had some experience with Jekyll, which lays a lot of groundwork for this project.
