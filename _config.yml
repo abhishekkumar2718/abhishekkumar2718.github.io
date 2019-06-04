@@ -27,8 +27,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor
   - todo.yml
+
+algolia:
+  application_id: SQBFJ93CTL
+  index_name: prod_master
+  search_only_api_key: dcd07f3c3fd1edcb95aea61abbea42d1

@@ -2,7 +2,7 @@
   <span class="post-meta">{{ post.date | date: site.date_format }}</span>
   <br>
   <span class="post-meta">
-    <a href="/categories/{{ post.category | downcase }}">{{ post.category }}</a>
+    <a href="/{{ post.category | downcase }}/">{{ post.category }}</a>
   </span>
   <h5>
     <a href="{{ post.url | relative_url }}">
