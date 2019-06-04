@@ -2,20 +2,24 @@
 layout: default
 ---
 
-<article class="post h-entry">
-    <p class="post-meta">
-    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
-      {{ page.date | date: site.date_format }}
-    </time>
-    <br>
+<div class="card">
+  <div class="card-body">
+    <article class="post h-entry">
+        <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: site.date_format }}
+        </time>
+        <br>
 
-    <span itemprop="author">
-      <span class="p-author h-card">
-        {{ site.author | escape }}
-      </span>
-    </span>
+        <span itemprop="author">
+          <span class="p-author h-card">
+            {{ site.author | escape }}
+          </span>
+        </span>
 
-    <div class="post-content e-content">
-      {{ content }}
-    </div>
-</article>
+        <div class="post-content e-content">
+          {{ content }}
+        </div>
+    </article>
+  </div>
+</div>

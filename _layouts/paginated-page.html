@@ -3,18 +3,22 @@ layout: default
 ---
 {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
 
-{% if content %}
-  <p>{{ content }}</p>
-{% endif %}
+<div class="card">
+  <div class="card-body">
+    {% if content %}
+      <p>{{ content }}</p>
+    {% endif %}
 
-<div>
-  {%- for post in site.posts %}
-    {%- if page.category %}
-      {%- if post.category == page.category %}
-        {% include post-list.html %}
-      {%- endif %}
-    {%- else %}
-      {% include post-list.html %}
-    {%- endif %}
-  {% endfor %}
+    <div>
+      {%- for post in site.posts %}
+        {%- if page.category %}
+          {%- if post.category == page.category %}
+            {% include post-list.html %}
+          {%- endif %}
+        {%- else %}
+          {% include post-list.html %}
+        {%- endif %}
+      {% endfor %}
+    </div>
+  </div>
 </div>

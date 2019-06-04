@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="card">
+  <div class="card-header">
+    <ul class="nav nav-pills nav-justified" id="baseTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pill-recent-posts" data-toggle="pill" href="#recent-posts" role="tab" aria-controls="recent-posts" aria-selected="true">
+          Recent Posts
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" id="pill-welcome" data-toggle="pill" href="#welcome" role="tab" aria-controls="welcome" aria-selected="false">Welcome</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="card-body">
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="recent-posts" role="tabpanel" aria-labelledby="pill-recent-posts-tab">
+        <ul class="posts">
+         {%- for post in site.posts offset: site.posts_offset limit:3 -%}
+         <li>
+           {% include post-list.html %}
+         </li>
+         {% endfor %}
+        </ul>
+
+        <ul>
+          <p class="text-primary">Upcoming Articles</p>
+          {% for article in site.data.upcoming_articles %}
+            <li>{{ article }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="welcome" role="tabpanel" aria-labelledby="pill-welcome-tab">
+        {{ content | markdownify }}
+      </div>
+    </div>
+  </div>
+</div>

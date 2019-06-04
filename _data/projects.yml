@@ -2,10 +2,7 @@
   name: DebianCI
   status: In Progress
   link: https://salsa.debian.org/ci-team/debci/
-  technologies:
-    - Ruby
-    - Systems
-    - CI-CD
+  technologies: Ruby, Systems, CI-CD
   description: |
     DebianCI is an automated system that coordinates the execution of automated 
     tests against packages in the Debian system.<br/><br/> 
@@ -18,9 +15,7 @@
   name: IRIS
   status: In Progress
   link: https://iris.nitk.ac.in/
-  technologies:
-    - Ruby On Rails
-    - Web Development
+  technologies: Ruby On Rails, Web Development
   description: |
     IRIS is a home-grown ERP solution for administrative, academic, and alumni-related needs of NITK. 
     It was founded by a group of students envisioning to bring a change at NITK under the guidance of Dr. KV Gandadharan.<br/><br/>
@@ -32,9 +27,7 @@
   name: Dotfiles
   status: Finished
   link: https://github.com/abhishekkumar2718/dotfiles
-  technologies:
-    - Shell Scripting
-    - Linux
+  technologies: Shell Scripting, Linux
   description: |
     Dotfiles are plain text configuration files. The name derives from the leading `.` in their names, making them hidden.<br/><br/>
     I have spent a lot of time configuring and adjusting my desktop. 
@@ -45,9 +38,7 @@
   name: NoteTaker
   status: In Progress
   link: https://github.com/abhishekkumar2718/NoteTaker
-  technologies:
-    - Ruby
-    - Markdown
+  technologies: Ruby, Markdown
   description: |
     NoteTaker is a barebones notes-taking app which renders a nested markdown directory to HTML. 
 

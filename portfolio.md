@@ -1,7 +1,7 @@
 ---
-layout: projects
-title: Projects
-asset_img: 'projects'
+layout: portfolio
+title: Portfolio
+asset_img: 'portfolio'
 ---
 
 I am Abhishek Kumar, Bachelor of Technology, Computer Science And Engineering  (2022 Batch) from [National Institute of Technology Karnataka, Surathkal](https://www.nitk.ac.in/).
