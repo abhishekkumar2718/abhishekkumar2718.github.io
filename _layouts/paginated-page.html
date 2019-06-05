@@ -5,8 +5,10 @@ layout: default
 
 <div class="card">
   <div class="card-body">
-    {% if content %}
+    {% assign content = content | strip_newlines %}
+    {% if content != "" %}
       <p>{{ content }}</p>
+      <hr><br>
     {% endif %}
 
     <div>

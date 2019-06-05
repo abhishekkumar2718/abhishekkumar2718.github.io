@@ -1,6 +1,7 @@
 ---
 layout: index
 title: Home
+subtitle: 'I write frequently, I promise!'
 ---
 
 Hello! I see you have found the way to my personal website.

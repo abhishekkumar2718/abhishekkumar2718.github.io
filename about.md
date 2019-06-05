@@ -2,6 +2,7 @@
 layout: page
 title: About Me
 permalink: /about/
+subtitle: 'Hello! Glad to meet you.'
 asset_img: 'about'
 ---
 
