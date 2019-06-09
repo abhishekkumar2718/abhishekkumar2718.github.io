@@ -41,7 +41,11 @@ layout: default
               <div id="{{ project.name }}" class="collapse" aria-labelledby="heading-{{ project.name }}" data-parent="#project-list">
                 <div class="card-body">
                   <p>{{ project.description | markdownify }}</p>
-                  <a class="card-link" href="{{ project.link }}">Link</a>
+                  <a class="card-link" href="{{ project.repo_link }}">Link</a>
+                  {% if project.demo_link %}
+                    <br>
+                    <a class="card-link" href="{{ project.demo_link }}">Link to the demonstration</a>
+                  {% endif %}
                 </div>
               </div>
             </div>

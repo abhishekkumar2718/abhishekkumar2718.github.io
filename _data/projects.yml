@@ -1,7 +1,7 @@
 - DebianCI:
   name: DebianCI
   status: In Progress
-  link: https://salsa.debian.org/ci-team/debci/
+  repo_link: https://salsa.debian.org/ci-team/debci/
   technologies: Ruby, Systems, CI-CD
   description: |
     DebianCI is an automated system that coordinates the execution of automated 
@@ -14,7 +14,7 @@
 - IRIS:
   name: IRIS
   status: In Progress
-  link: https://iris.nitk.ac.in/
+  repo_link: https://iris.nitk.ac.in/
   technologies: Ruby On Rails, Web Development
   description: |
     IRIS is a home-grown ERP solution for administrative, academic, and alumni-related needs of NITK. 
@@ -23,10 +23,23 @@
     I have worked primarily on Admissions, Ph.D. and Certificates modules.
     I am proud of my work at IRIS, and it's gratifying to see my contributions make life easier for people at NITK.
 
+- Voting:
+  name: Digital Voting Platform
+  status: In Progress
+  repo_link: https://github.com/abhishekkumar2718/Digital-Voting-Platform
+  demo_link: https://secret-basin-11954.herokuapp.com/
+  technologies: Ruby On Rails, Blockchain
+  description: |
+    A blockchain based voting application for NITK community.<br/><br/>
+    I have worked over this project with Harsh Agrawal and Krishna Swaroop during the ACM-IE Digital Hackathon in 2019.
+    We hope our application will be integrated with the actual class representative and committee elections soon.
+    It was my first experience, managing a collaborative project and the 24-hour timeframe of the hackathon made it
+    a challenging experience.
+
 - Dotfiles:
   name: Dotfiles
   status: Finished
-  link: https://github.com/abhishekkumar2718/dotfiles
+  repo_link: https://github.com/abhishekkumar2718/dotfiles
   technologies: Shell Scripting, Linux
   description: |
     Dotfiles are plain text configuration files. The name derives from the leading `.` in their names, making them hidden.<br/><br/>
@@ -37,7 +50,7 @@
 - NoteTaker:
   name: NoteTaker
   status: In Progress
-  link: https://github.com/abhishekkumar2718/NoteTaker
+  repo_link: https://github.com/abhishekkumar2718/NoteTaker
   technologies: Ruby, Markdown
   description: |
     NoteTaker is a barebones notes-taking app which renders a nested markdown directory to HTML. 
