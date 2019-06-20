@@ -8,6 +8,7 @@ github_username:  abhishekkumar2718
 
 # Build settings
 markdown: kramdown
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

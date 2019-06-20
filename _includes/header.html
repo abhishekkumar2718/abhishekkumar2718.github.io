@@ -6,21 +6,14 @@
 
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="{{ "/" | relative_url }}">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ "portfolio" | relative_url }}">Portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ "blog" | relative_url }}">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ "search" | relative_url }}">Search</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ "about" | relative_url }}">About Me</a>
-      </li>
+      {% for nav_item in site.data.navigation %}
+        <li class="nav-item">
+          <a class="nav-link {{ class }}" href="{{ nav_item.path | relative_url }}">
+            <i class="fas fa-fw {{ nav_item.fa-icon }}"></i> 
+            {{ nav_item.name }}
+          </a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
 </nav>
