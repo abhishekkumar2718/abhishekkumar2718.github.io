@@ -1,24 +1,24 @@
 - home:
   name: Home
-  fa-icon: fa-home
+  material-icon: home
   path: /
 
 - portfolio:
   name: Portfolio
-  fa-icon: fa-code
+  material-icon: code
   path: portfolio
 
 - blog:
   name: Blog
-  fa-icon: fa-comment
+  material-icon: comment
   path: blog
 
 - search:
   name: Search
-  fa-icon: fa-search
+  material-icon: search
   path: search
 
 - about:
   name: About Me
-  fa-icon: fa-user
+  material-icon: perm_identity
   path: about

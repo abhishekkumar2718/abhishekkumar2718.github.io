@@ -1,19 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="teal">
+  <div class="nav-wrapper container">
+    <a class="brand-logo" href="{{ site.url }}">Ramblings</a>
 
-  <div class="collapse navbar-collapse" id="navbarContent">
-    <ul class="navbar-nav ml-auto">
+    <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+
+    <ul class="right hide-on-med-and-down">
       {% for nav_item in site.data.navigation %}
-        <li class="nav-item">
-          <a class="nav-link {{ class }}" href="{{ nav_item.path | relative_url }}">
-            <i class="fas fa-fw {{ nav_item.fa-icon }}"></i> 
+        <li>
+          <a href="{{ nav_item.path | relative_url }}">
             {{ nav_item.name }}
+            <i class="material-icons left">{{ nav_item.material-icon }}</i>
           </a>
         </li>
       {% endfor %}
     </ul>
   </div>
 </nav>
+
+<ul class="sidenav" id="mobile-menu"> 
+  {% for nav_item in site.data.navigation %}
+    <li>
+      <a href="{{ nav_item.path | relative_url }}">
+        {{ nav_item.name }}
+        <i class="material-icons left">{{ nav_item.material-icon }}</i>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
