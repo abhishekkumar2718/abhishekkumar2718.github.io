@@ -2,42 +2,85 @@
 layout: default
 ---
 
-<div class="card">
-  <div class="card-header">
-    <ul class="nav nav-pills nav-justified" id="baseTab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pill-recent-posts" data-toggle="pill" href="#recent-posts" role="tab" aria-controls="recent-posts" aria-selected="true">
-          Recent Posts
+{% assign featured_post = site.posts[0] %}
+<div class="row">
+  <div class="card grey darken-2">
+    <div class="card-content white-text">
+      <h6>
+        <a href='{{ featured_post.category | downcase | relative_url }}'>
+          {{ featured_post.category }}
         </a>
-      </li>
+        | {{ featured_post.date | date: site.date_format }}
+      </h6>
 
-      <li class="nav-item">
-        <a class="nav-link" id="pill-welcome" data-toggle="pill" href="#welcome" role="tab" aria-controls="welcome" aria-selected="false">Welcome</a>
-      </li>
-    </ul>
+      <span class="card-title">
+        {{ featured_post.title }}
+      </span>
+      <p style="width: 50%;">
+        {{ featured_post.excerpt }}
+      </p>
+    </div>
+    <div class="card-action">
+      <a href="{{ featured_post.url | relative_url }}">Continue Reading</a>
+    </div>
   </div>
+</div>
 
-  <div class="card-body">
-    <div class="tab-content">
-      <div class="tab-pane fade show active" id="recent-posts" role="tabpanel" aria-labelledby="pill-recent-posts-tab">
-        <ul class="posts">
-         {%- for post in site.posts offset: site.posts_offset limit:3 -%}
-         <li>
-           {% include post-list.html %}
-         </li>
-         {% endfor %}
-        </ul>
+<div class="row">
+  {% assign post = site.posts[1] %}
+  <div class="col l6 s12">
+    <div class="card">
+      <div class="card-content">
+        <h6>
+          <a href='{{ post.category | downcase | relative_url}}'>
+            {{ post.category }}
+          </a>
+          | {{ post.date | date: site.date_format }}
+        </h6>
 
-        <ul>
-          <p class="text-primary">Upcoming Articles</p>
-          {% for article in site.data.upcoming_articles %}
-            <li>{{ article }}</li>
-          {% endfor %}
-        </ul>
+        <span class="card-title">{{ post.title }}</span>
+        <p>{{ post.excerpt }}</p>
       </div>
-      <div class="tab-pane fade" id="welcome" role="tabpanel" aria-labelledby="pill-welcome-tab">
-        {{ content | markdownify }}
+      <div class="card-action">
+        <a href="{{ post.url | relative_url }}">Continue Reading</a>
       </div>
     </div>
+  </div>
+
+  {% assign post = site.posts[2] %}
+  <div class="col l6 s12">
+    <div class="card">
+      <div class="card-content">
+        <h6>
+          <a href='{{ post.category | downcase | relative_url}}'>
+            {{ post.category }}
+          </a>
+          | {{ post.date | date: site.date_format }}
+        </h6>
+
+        <span class="card-title">{{ post.title }}</span>
+        <p>{{ post.excerpt }}</p>
+      </div>
+      <div class="card-action">
+        <a href="{{ post.url | relative_url }}">Continue Reading</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col l9 s12">
+    <h3>Welcome</h5>
+    <div class="divider"></div>
+    {{ content }}
+  </div>
+
+  <div class="col l3 s12">
+    <h5>Upcoming Articles</h5>
+    <ul class="grey-text"> 
+      {% for article in site.data.upcoming_articles %}
+        <li>{{ article }}</li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
