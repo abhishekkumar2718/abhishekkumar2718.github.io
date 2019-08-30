@@ -2,29 +2,13 @@
 layout: default
 ---
 
-<div class="card">
-  <div class="card-body">
-    {{ content }}
+<h1>{{ page.title }}</h1>
 
-    <div id="search-searchbar"></div>
+<h6>{{ page.subtitle }}</h6>
 
-    <div class="post-list" id="search-hits">
-      {% for post in site.posts %}
-        <div class="post-item">
-          {% assign date_format = site.date_format %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+<div id="search-searchbar"></div>
 
-          <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h2>
-
-          <div class="post-snippet">{{ post.excerpt }}</div>
-        </div>
-      {% endfor %}
-    </div>
-
-    {% include algolia.html %}
-  </div>
+<div class="post-list" id="search-hits">
 </div>
+
+{% include algolia.html %}

@@ -30,11 +30,15 @@ const hitTemplate = function(hit) {
   const content = hit._highlightResult.html.value;
 
   return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
+    <div class="card">
+      <div class="card-content">
+      <span class="card-title">${title}</span>
       {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
-      <div class="post-snippet">${content}</div>
+      <p>${content}</p>
+
+      <div class="card-action">
+        <a href="${url}">Read More</a>
+      </div>
     </div>
   `;
 }
@@ -94,4 +98,3 @@ search.start();
   display: none;
 }
 </style>
-
