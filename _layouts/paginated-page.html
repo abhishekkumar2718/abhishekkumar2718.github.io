@@ -1,26 +1,41 @@
 ---
 layout: default
 ---
-{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
 
-<div class="card">
-  <div class="card-body">
-    {% assign content = content | strip_newlines %}
-    {% if content != "" %}
-      <p>{{ content }}</p>
-      <hr><br>
-    {% endif %}
+<h1>{{ page.title }}</h1>
 
-    <div>
-      {%- for post in site.posts %}
-        {%- if page.category %}
-          {%- if post.category == page.category %}
-            {% include post-list.html %}
-          {%- endif %}
-        {%- else %}
-          {% include post-list.html %}
-        {%- endif %}
-      {% endfor %}
-    </div>
-  </div>
+<h6>{{ page.subtitle }}</h6>
+
+<p>{{ content }}</p>
+
+{% if page.title == "Blog" %}
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">poll</i>Categories
+      </div>
+
+      <div class="collapsible-body">
+        <div class="collection">
+          {% for category in site.data.categories %}
+          <a href="/{{ category }}" class="collection-item">{{ category | capitalize }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </li>
+  </ul>
+{% endif %}
+
+<div class="divider"></div>
+
+<div>
+  {%- for post in site.posts %}
+    {%- if page.category %}
+      {%- if post.category == page.category %}
+        {% include post-list.html %}
+      {%- endif %}
+    {%- else %}
+      {% include post-list.html %}
+    {%- endif %}
+  {% endfor %}
 </div>

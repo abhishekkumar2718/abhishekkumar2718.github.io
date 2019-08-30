@@ -29,42 +29,12 @@ layout: default
 <div class="row">
   {% assign post = site.posts[1] %}
   <div class="col l6 s12">
-    <div class="card">
-      <div class="card-content">
-        <h6>
-          <a href='{{ post.category | downcase | relative_url}}'>
-            {{ post.category }}
-          </a>
-          | {{ post.date | date: site.date_format }}
-        </h6>
-
-        <span class="card-title">{{ post.title }}</span>
-        <p>{{ post.excerpt }}</p>
-      </div>
-      <div class="card-action">
-        <a href="{{ post.url | relative_url }}">Continue Reading</a>
-      </div>
-    </div>
+    {% include post-list.html %}
   </div>
 
   {% assign post = site.posts[2] %}
   <div class="col l6 s12">
-    <div class="card">
-      <div class="card-content">
-        <h6>
-          <a href='{{ post.category | downcase | relative_url}}'>
-            {{ post.category }}
-          </a>
-          | {{ post.date | date: site.date_format }}
-        </h6>
-
-        <span class="card-title">{{ post.title }}</span>
-        <p>{{ post.excerpt }}</p>
-      </div>
-      <div class="card-action">
-        <a href="{{ post.url | relative_url }}">Continue Reading</a>
-      </div>
-    </div>
+    {% include post-list.html %}
   </div>
 </div>
 
