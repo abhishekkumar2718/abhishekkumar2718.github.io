@@ -6,7 +6,7 @@ tags: ['Licenses', 'Open Source']
 excerpt: Read about the differences between Open Source and Free Software, some commonly used licenses and factors involved in deciding the license.
 ---
 
-## Money, Politics And Javascript
+### Money, Politics And Javascript
 {:.no_toc}
 
 I recently watched [The Economics of Open Source](https://www.youtube.com/watch?v=MO8hZlgK5zc), a JSConf EU 2019 talk by C J Silverio. C J Silverio is the former CTO of npm, Inc. and is currently involved with [Entropic](https://github.com/entropic-dev/entropic), a federated package manager for Javascript with Ronald Dahl. It has the potential to be the next **big thing** in Javascript and Web Development in general. I would recommend everything to check the first talk as well.
@@ -21,11 +21,11 @@ A central theme of the talk was **ownership of the software and the intellectual
 
 {% include toc.html %}
 
-## Open Source Software
+### Open Source Software
 
 Open source is a term denoting that a product includes permission to use its source code, design documents, or content. Open source development can bring in diverse perspectives beyond those of a single company. In recent years, there has been a significant shift in attitudes towards Open Source, with companies such as IBM, Google and Microsoft having a serious public stake.
 
-## Free Software
+### Free Software
 
 Free Software is _the software that grants the user the freedom to share, study and modify it._ A common adage used to describe free software is **Think free speech, not free beer**. The emphasis of free software is on the freedom of the user, rather than the price of the software. Often, the term _libre software_ (liberty) is used instead of free software to make a clear distinction.
 
@@ -39,13 +39,15 @@ Both Open Source and Libre software can be protective (copyleft) or permissive.
 
 > Libre and Open Source Software are included together under a umbrella term, [Free And Open-Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software).
 
-## Protective and Permissive Licenses
+{% include divider %}
+
+### Protective and Permissive Licenses
 
 A **copyleft license** offers the right to modify and distribute copies of work provided the same rights are preserved. The derivates of copyleft software must also be copyleft and free software. Examples - [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 A **permissive license**, on the other hand, offers the right to modify and distribute without any stipulations. Examples - [MIT License](https://opensource.org/licenses/MIT), [Apache License](https://www.apache.org/licenses/LICENSE-2.0)
 
-## Choosing A License
+### Choosing A License
  
  Having laid the groundwork, we can turn to the issue at hand - Choosing a license.
 
@@ -71,14 +73,18 @@ A **permissive license**, on the other hand, offers the right to modify and dist
 
  > I lean towards copyleft licenses like GPL.
 
-## Too Long, Didn't Read
+{% include divider %}
+
+### Too Long, Didn't Read
 
  - If widespread adoption is a priority, use _MIT license_ (or any other permissive license).
  - If freedom for the end-user and having same freedoms on derivatives is important, Use _GPL v3_ (or any other copyleft license).
 
- I would recommend using [choosealicense](choosealicense.com), a website by Github built to guide content creators.
+I would recommend using [choosealicense](choosealicense.com), a website by Github built to guide content creators.
 
-## References
+{% include divider %}
+
+### References
 
  1. [Revolution OS (96 minutes)](https://www.youtube.com/watch?v=4vW62KqKJ5A) - A documentary that explores the story of programmers like Stallman and Torvalds and their journey of the GNU/Linux and the Open Source movement. This movie inspired my love for Linux and open source.
  2. [Economics of Open Source (37 minutes)](https://www.youtube.com/watch?v=MO8hZlgK5zc) - JSConf Talk by C J referenced throughout this article.

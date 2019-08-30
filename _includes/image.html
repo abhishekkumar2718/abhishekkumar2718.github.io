@@ -1,10 +1,17 @@
+{% if page.layout == 'post' %}
+  {% capture src %}
+    /assets/img/posts/{{ page.asset_img }}/{{ include.filename }}
+  {% endcapture %}
+{% else %}
+  {% capture src %}
+    /assets/img/{{ page.asset_img }}/{{ include.filename }}
+  {% endcapture %}
+{% endif %}
+
 <center>
   <figure>
-    {% if page.layout == 'post' %}
-      <img src="/assets/img/posts/{{ page.asset_img }}/{{ include.filename }}" alt="{{ include.alt }}"/>
-    {% else %}
-      <img src="/assets/img/{{ page.asset_img }}/{{ include.filename}}" alt="{{ include.alt }}"/>
-    {% endif %}
+
+    <img class="materialboxed" data-caption="{{ include.caption }}" src="{{ src }}" alt="{{ include.alt }}"/>
     <figcaption>{{ include.caption }}</figcaption>
   </figure>
 </center>

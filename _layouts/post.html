@@ -2,24 +2,10 @@
 layout: default
 ---
 
-<div class="card">
-  <div class="card-body">
-    <article class="post h-entry">
-        <p class="post-meta">
-        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
-          {{ page.date | date: site.date_format }}
-        </time>
-        <br>
+<h1>{{ page.title }}</h1>
 
-        <span itemprop="author">
-          <span class="p-author h-card">
-            {{ site.author | escape }}
-          </span>
-        </span>
+<h6>{{ page.date | date: site.date_format }} by {{ site.author }}</h6>
 
-        <div class="post-content e-content">
-          {{ content }}
-        </div>
-    </article>
-  </div>
-</div>
+<div class="divider"></div>
+
+{{ content }}
