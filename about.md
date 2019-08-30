@@ -14,9 +14,11 @@ _I am just a guy who writes for fun._
 
 {% include image.html filename="hero_for_fun.png" alt="A guy who is hero for fun" caption="Remember, read from right to left" %}
 
-**Here's the extended backstory**
+### Extended Backstory
 
-By the end of first year, I felt my life was getting too one-dimensional. I would spend all my time locked up in my room, working on some project. For an idea about howbad my situation was, I had skipped most of the cultural fest working on something I don't even remember now.
+<div class="divider"></div>
+
+By the end of first year, I felt my life was getting too one-dimensional. I would spend all my time locked up in my room, working on some project. For an idea about how bad my situation was, I had skipped most of the cultural fest working on something I don't even remember now.
 
 My friends would ask, _"What did you do over the weekend?"_. I would never have an interesting answer. I could feel them regretting even asking, for they knew answer.
 
