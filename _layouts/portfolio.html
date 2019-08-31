@@ -2,56 +2,73 @@
 layout: default
 ---
 
-<div class="card">
-  <div class="card-header">
-    <ul class="nav nav-pills nav-justified" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pills-skills" data-toggle="pill" href="#skills" aria-controls="skills" aria-selected="true">
-          Skills
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" id="pills-project" data-toggle="pill" href="#projects" aria-controls="projects" aria-selected="false">
-          Projects
-        </a>
-      </li>
-    </ul>
+<br/>
+<div class="row">
+  <div class="center">
+    <i class="large material-icons">build</i>
+    <h3>Projects</h3>
+    <h6></h6>
   </div>
 
-  <div class="card-body">
-    <div class="tab-content">
-      <div class="tab-pane fade show active" id="skills" role="tabpanel" aria-labelledby="pills-about-me">
-        {{ content }}
-      </div>
+  {% for project in site.data.projects %}
+    {% capture count %}{% cycle 'projects': 'one', 'two', 'three' %}{% endcapture %}
 
-      <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="pills-projects">
-        <div class="accordion" id="project-list">
-          {% for project in site.data.projects %}
-            <div class="card">
-              <div class="card-header" id="heading-{{ project.name }}">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#{{ project.name }}" aria-expanded="true" aria-controls="{{ project.name }}"> 
-                  {{ project.name }}
-                  <br>
-                  <span class="post-meta float-right">{{ project.status }}</span>
-                  <span class="post-meta float-left">{{ project.technologies }}</span>
-                </button>
-              </div>
+    {% if count == "one" %}
+      <div class="row center">
+    {% endif %}
 
-              <div id="{{ project.name }}" class="collapse" aria-labelledby="heading-{{ project.name }}" data-parent="#project-list">
-                <div class="card-body">
-                  <p>{{ project.description | markdownify }}</p>
-                  <a class="card-link" href="{{ project.repo_link }}">Link</a>
-                  {% if project.demo_link %}
-                    <br>
-                    <a class="card-link" href="{{ project.demo_link }}">Link to the demonstration</a>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
+    <div class="col s12 l4">
+      {% include project-card.html %}
     </div>
+
+    {% if count == "three" %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% if count != "three" %}
+    </div>
+  {% endif %}
+</div>
+
+{% include divider %}
+
+<div class="row">
+  <div class="center">
+    <i class="large material-icons">group</i>
+    <h3>Organisations</h3>
+    <h6></h6>
   </div>
+
+  {% for organisation in site.data.organisations %}
+    {% capture count %}{% cycle 'organisations': 'one', 'two', 'three' %}{% endcapture %}
+
+    {% if count == "one" %}
+      <div class="row center"> 
+    {% endif %}
+
+    <div class="col s12 l4"> 
+      {% include organisation-card.html %}
+    </div>
+
+    {% if count == "three" %}
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% if count != "three" %}
+    </div>
+  {% endif %}
+</div>
+
+{% include divider %}
+
+<div class="row">
+  <div class="center">
+    <i class="large material-icons">emoji_events</i>
+    <h3>Skills And Achievements</h3>
+    <h6></h6>
+  </div>
+
+  {{ content }}
 </div>

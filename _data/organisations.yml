@@ -1,0 +1,22 @@
+- DebianCI:
+  name: DebianCI
+  technologies: Ruby, Systems, CI-CD
+  org_link: https://ci.debian.net/
+  image: debian.png
+  about: DebianCI is an automated system that coordinates the executation of automated tests against packages in the Debian system.
+  description: |
+    I have been contributing since March 2019, as a part of GSoC although I couldn't be selected.
+    Debci was my first experience with a _professional_ standard codebase.
+    I learnt a lot about coding conventions and standards.
+    Contributing to Debci helped me improve my ruby skills.
+
+- IRIS:
+  name: IRIS
+  technologies: Ruby on Rails, Web Development
+  org_link: https://iris.nitk.ac.in/
+  about_link: https://iris.nitk.ac.in/about/
+  image: iris.png
+  about: IRIS is a team of motivated students from NITK Surathkal, developing and expanding a digital portal that ensures that all administrative, academic and alumni related procedures take place methodically.
+  description: |
+    I have been working primarily as a backend developer since January 2019, after a winter internship in December 2018.
+    I am proud of my work at IRIS, and it's gratifying to see my contributions make life easier for people at NITK.

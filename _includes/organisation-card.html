@@ -1,0 +1,31 @@
+<div class="card">
+  {% if organisation.image %}
+  <!--
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" style="height: 200px; width: 200px" src="/assets/img/portfolio/{{ organisation.image }}">
+    </div>
+  -->
+  {% endif %}
+
+  <div class="card-content activator">
+    <span class="card-title activator">{{ organisation.name }}</span>
+    <p class="left-align activator">{{ organisation.technologies }}</p>
+    <br/>
+    <p class="left-align activator">{{ organisation.about }}</p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title activator">{{ organisation.name }}<i class="material-icons right">close</i></span>
+    <p>{{ organisation.description | markdownify }}</p>
+  </div>
+
+  <div class="card-action">
+    {% if organisation.org_link %}
+      <a href="{{ organisation.org_link }}">Organisation</a>
+    {% endif %}
+
+    {% if organisation.about_link %}
+      <a href="{{ organisation.about_link }}">About Us</a>
+    {% endif %}
+  </div>
+</div>

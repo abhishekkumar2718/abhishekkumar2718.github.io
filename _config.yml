@@ -36,3 +36,5 @@ algolia:
   application_id: SQBFJ93CTL
   index_name: prod_master
   search_only_api_key: dcd07f3c3fd1edcb95aea61abbea42d1
+
+cv_last_updated: 1st September, 2019

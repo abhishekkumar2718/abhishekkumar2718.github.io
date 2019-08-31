@@ -1,28 +1,17 @@
-- DebianCI:
-  name: DebianCI
-  status: In Progress
-  repo_link: https://salsa.debian.org/ci-team/debci/
-  technologies: Ruby, Systems, CI-CD
+- ScholarHub:
+  name: ScholarHub
+  status: Finished
+  repo_link: https://github.com/abhishekkumar2718/ScholarHub
+  demo_link: https://shrouded-depths-90549.herokuapp.com/
+  image: scholarhub.png
+  technologies: Ruby On Rails
+  about: LinkedIn for Research Scholars
   description: |
-    DebianCI is an automated system that coordinates the execution of automated 
-    tests against packages in the Debian system.<br/><br/> 
-    I have been contributing since March 2019, as a part of GSoC although I couldn't be selected. 
-    Debci was my first experience with a _professional_ standard codebase.
-    I have learned a lot about coding conventions and standards.
-    Contributing to Debci helped me improve my ruby skills.
-    <a class="card-link" href="/technology/2019/06/09/gsoc.html">Article on my experience of GSoC 2019</a>
+    Brings a variety of relevant features for research scholars such as grants, papers and upcoming seminars.
 
-- IRIS:
-  name: IRIS
-  status: In Progress
-  repo_link: https://iris.nitk.ac.in/
-  technologies: Ruby On Rails, Web Development
-  description: |
-    IRIS is a home-grown ERP solution for administrative, academic, and alumni-related needs of NITK. 
-    It was founded by a group of students envisioning to bring a change at NITK under the guidance of Dr. KV Gandadharan.<br/><br/>
-    I have been working as a backend developer since January 2019, after a winter internship in December 2018.
-    I have worked primarily on Admissions, Ph.D. and Certificates modules.
-    I am proud of my work at IRIS, and it's gratifying to see my contributions make life easier for people at NITK.
+    Created during NIT Conclave Hackathon 2019 with Nirmal Khedkar on the theme _Inter NIT Communication_.
+
+    We finished in top five out of 22 NITs, which isn't a bad effort for some second year kids ;).
 
 - Voting:
   name: Digital Voting Platform
@@ -30,31 +19,44 @@
   repo_link: https://github.com/abhishekkumar2718/Digital-Voting-Platform
   demo_link: https://secret-basin-11954.herokuapp.com/
   technologies: Ruby On Rails, Blockchain
+  image: voting.png
+  about: A blockchain based voting application for NITK community.
   description: |
-    A blockchain based voting application for NITK community.<br/><br/>
     I have worked over this project with Harsh Agrawal and Krishna Swaroop during the ACM-IE Digital Hackathon in 2019.
+
     We hope our application will be integrated with the actual class representative and committee elections soon.
-    It was my first experience, managing a collaborative project and the 24-hour timeframe of the hackathon made it
-    a challenging experience.
 
 - Dotfiles:
   name: Dotfiles
   status: Finished
   repo_link: https://github.com/abhishekkumar2718/dotfiles
   technologies: Shell Scripting, Linux
+  image: dotfiles.png
+  about: My collection of dotfiles which heavily customize the experience.
   description: |
     Dotfiles are plain text configuration files. The name derives from the leading `.` in their names, making them hidden.<br/><br/>
     I have spent a lot of time configuring and adjusting my desktop. 
     Setting up a new VM or even desktops is difficult and error-prone. 
     In true Linux tradition, I made a few helper scripts to automate the proccess.
 
+- SurveyApp:
+  name: SurveyApp
+  status: Finished
+  repo_link: https://github.com/abhishekkumar2718/Survey-App
+  demo_link: https://ancient-scrubland-76328.herokuapp.com/
+  image: survey-app.png
+  technologies: Ruby on Rails
+  about: A Web Application to create, moderate and submit surveys.
+  description: |
+    Created for Web Club Recruitment Task, 2019.
+
 - NoteTaker:
   name: NoteTaker
   status: In Progress
   repo_link: https://github.com/abhishekkumar2718/NoteTaker
   technologies: Ruby, Markdown
+  image: notetaker.png
+  about: NoteTaker is a barebones notes-taking app which renders a nested markdown directory to HTML. 
   description: |
-    NoteTaker is a barebones notes-taking app which renders a nested markdown directory to HTML. 
-
-    I had the idea for this project as I couldn't find any markdown-based note taking solution which works well with Vim.
+    I had the idea for this project as I couldn't find any markdown-based note taking solution which work well with Vim.
     I had some experience with Jekyll, which lays a lot of groundwork for this project.

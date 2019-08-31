@@ -1,0 +1,31 @@
+<div class="card"> 
+  {% if project.image %}
+    <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="/assets/img/portfolio/{{ project.image }}">
+    </div>
+  {% endif %}
+
+  <div class="card-content">
+    <span class="card-title activator">{{ project.name }}</span>
+    <p class="left-align activator">{{ project.technologies }}</p>
+    <p class="left-align activator">{{ project.status }}</p>
+    <br/>
+    <p class="left-align activator">{{ project.about }}</p>
+  </div>
+
+  <div class="card-reveal">
+    <span class="card-title activator">{{ project.name }}<i class="material-icons right">close</i></span>
+
+    <p>{{ project.description | markdownify }}</p>
+  </div>
+
+  <div class="card-action">
+    {% if project.repo_link %}
+      <a href="{{ project.repo_link }}">Repository</a>
+    {% endif %}
+
+    {% if project.demo_link %}
+      <a href="{{ project.demo_link }}">Demonstration</a>
+    {% endif %}
+  </div>
+</div>

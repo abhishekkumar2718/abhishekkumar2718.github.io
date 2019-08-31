@@ -11,12 +11,8 @@ I specialise in web development, as a backend developer. I am proficient in, and
 
 I admire the Open Source Philosophy and am an avid user of Linux. I am a console-addict and look to automate my workflow. _I use Arch, btw._
 
-I am exploring Artificial Intelligence in my free time. I relish taking new challenges and figuring things on my own, _much to the detriment of my mentors_.
+I am exploring Artificial Intelligence in my free time. I relish taking new challenges and figuring things on my own.
 
-My fellow programmers describe me as someone obsessed with coding conventions and documentation. _This might be a reason I prefer working alone._
+My fellow programmers describe me as someone obsessed with coding conventions and documentation.
 
-[Here's a generic resume](/assets/resume.pdf) (_might be outdated_).
-
-> Some last words before getting all technical.
-
-{% include image.html filename="hire_me.jpg" alt="Hire me!" caption="Future is now, old man<br> Memes are professional" %}
+[Here's a generic resume](/assets/resume.pdf) _(Last updated: {{ site.cv_last_updated }})._
