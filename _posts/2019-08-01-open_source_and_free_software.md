@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Source and Free Software
-category: Technology
+category: Programming
 tags: ['Licenses', 'Open Source']
 excerpt: Read about the differences between Open Source and Free Software, some commonly used licenses and factors involved in deciding the license.
 ---

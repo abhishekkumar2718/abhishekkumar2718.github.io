@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transforming Code Into Beautiful, Idiomatic Python
-category: Technology
+category: Programming
 tags: ['Python', 'Clean Code']
 excerpt: Read about simple transformations for more beautiful, idiomatic python. A companion piece for Pycon workshop.
 ---
