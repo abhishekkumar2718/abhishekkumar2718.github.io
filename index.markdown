@@ -4,6 +4,7 @@
 
 title: Home
 layout: home
+nav_order: 1
 ---
 
 I am **Abhishek Kumar**, a software engineer by trade. I write about things that interest me -
