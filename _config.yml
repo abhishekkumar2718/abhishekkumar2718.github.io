@@ -38,6 +38,12 @@ theme: just-the-docs
 plugins:
   - jekyll-feed
 
+aux_links:
+  "View Github Profile":
+    - "https://github.com/abhishekkumar2718"
+
+aux_links_new_tab: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
