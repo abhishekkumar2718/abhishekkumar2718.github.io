@@ -1,0 +1,28 @@
+---
+layout: default
+title: Home
+nav_order: 1
+---
+
+<p>
+I am <strong>Abhishek Kumar</strong>, a programmer by trade. I write about things that interest me - programming, pop culture and more!
+</p>
+
+<hr>
+<h2 class="text-delta">Featured Posts</h2>
+
+<ul>
+  {% for featured_post in site.data.featured_posts %}
+    {% for page in site.pages %}
+      {% if featured_post == page.title %}
+        <li>
+          <a href="{{ page.url | absolute_url }}">{{ page.title }}</a>{% if page.summary %} - {{ page.summary }}{% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+<p class="text-small text-grey-dk-100 mb-0">
+  Use navigation to find more posts.
+</p>
