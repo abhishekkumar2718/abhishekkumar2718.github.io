@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.2.1"
 
-gem "just-the-docs"
+gem "just-the-docs", "~> 0.3.3"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -29,3 +29,8 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
+gem "csv", "~> 3.0"
+gem "logger", "~> 1.6"
+gem "base64", "~> 0.2"
+gem "bigdecimal", "~> 3.1"
+gem 'webrick', '~> 1.9'
